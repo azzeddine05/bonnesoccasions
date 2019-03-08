@@ -1,0 +1,174 @@
+
+@media(max-width: 1024px){
+    .navbar-default .navbar-nav > li > a{
+            padding: 40px 10px 30px 10px;
+    }
+    .top-header .login{
+        padding-left: 20px;
+    }
+    .top-footer .finally .bt3:after{
+        right: 60px;
+    }
+}
+@media(max-width: 480px){
+    .navbar-header{
+        background-color: transparent;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .navbar-default .navbar-toggle .icon-bar{
+        background-color: #fff;
+    }
+    .navbar-toggle{
+        float: none;
+    }
+    .navbar-default .navbar-nav > li > a{
+
+        text-align: center;
+        color: #fff;
+        font-size: 15px;
+        padding: 20px 15px 20px 15px;
+    }
+    .top-header{
+        height: auto;
+    }
+    .top-header .logo img{
+        display: table;
+        margin: auto
+    }
+    .top-header .login{
+        text-align: center;
+        padding-left: 0px;
+    }
+    .top-header .left{
+        text-align: center
+    }
+    .top-header .content .log{
+        margin: auto;
+    }
+    .top-header .content .add{
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    .top-header .content p{
+        text-align: center;
+        margin-bottom: 20px;
+        margin-left: 0px;
+    }
+    .search label{
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .top-footer{
+        text-align: center;
+    }
+    .top-footer .bt1:after{
+        right: 170px;
+    }
+    .top-footer .bt2:after{
+        right: 160px;
+    }
+    .top-footer .finally{
+        margin-top: 30px;
+    }
+    .top-footer .finally .bt3:after{
+        right: 80px;
+        top: 45px;
+    }
+    .offers{
+        overflow: hidden;
+    }
+    .product-info{
+        padding-left: 40px;
+        height: auto;
+    }
+    input[type=checkbox] + label:before{
+        margin-left: 0px;
+    }
+    .register button{
+        padding: 10px 100px;
+    }
+    .changing-password button{
+        padding: 15px 100px;
+    }
+    .mapping button{
+        margin-left: 0px;
+    }
+    .messages .hours{
+        margin-right: -10px;
+    }
+    .messages .right-dive .parent .child2{
+        width: 100%;
+    }
+    svg,#francemap{
+        width: 100% !important;
+    }
+    .ads{
+        border: 0px;
+    }
+    .mobile-details{
+        padding-left: 20px;
+    }
+    .register a{
+        padding: 10px 80px;
+    }
+    .changing-password .new-account, .enroll-data button{
+        padding: 15px 80px;
+    }
+    .messages .right .parent .child2{
+        height: 110px;
+    }
+}
+@media(max-width: 360px){
+    .offers .title .left select{
+        width: 120px;
+        margin-left: 0px;
+        
+    }
+    .sub-offers .first-img{
+        margin-right: -200px;
+    }
+    .sub-offers .sec-img{
+        margin-right: -290px;
+    }
+    .top-footer .bt1:after{
+        right:110px;
+    }
+    .top-footer .bt2:after{
+        right:110px; 
+    }
+    .top-footer .finally .bt3:after{
+        right:20px;
+    }
+    .top-footer .h2{
+        right:0px;
+    }
+     .product-info{
+        margin-top:-1px;
+    }
+    .changing-password button{
+        padding: 10px 40px;
+        font-size: 14px;
+    }
+    .changing-password .new-account{
+        padding: 10px 40px;
+        font-size: 14px;
+    }
+    .registering a {
+        font-size: 12px;
+    }
+    .modal-dialog .parent{
+        display: block;
+    }
+    .register a{
+        padding: 10px 40px;
+    }
+     .messages .right .parent .child2{
+        height: 130px;
+    }
+    .messages .right-dive .parent .child2{
+        width: 60%;
+         height: 170px;
+    }
+}
+

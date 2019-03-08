@@ -1,0 +1,15 @@
+@media(max-width: 480px){
+    .offers .title .right h1{
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 360px){
+    .offers .title .right h1{
+        font-size: 13px;
+    }
+    .offers .title .left select{
+        margin-right: 70px;
+    }
+}
+

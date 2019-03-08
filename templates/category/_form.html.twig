@@ -1,0 +1,29 @@
+<div class="panel panel-flat">
+        <div class="panel-heading">
+            <h5 class="panel-title">{{ text_action|default('Ajouter une Categorie') }}</h5>
+            <div class="heading-elements">
+                <ul class="icons-list">
+                    <li><a data-action="collapse"></a></li>
+                    <li><a data-action="reload"></a></li>
+                    <li><a data-action="close"></a></li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="panel-body">
+            <div class="form-group">
+            {{ form_start(form) }}
+                {{ form_row(form.libelle, {'attr': {'class': 'form-control'}}) }}
+            </div>
+
+
+            <div class="text-right">
+                <button class="btn btn-primary">{{ button_label|default('Ajouter') }}<i class="icon-arrow-right14 position-right"></i></button>
+            </div>
+            {{ form_end(form) }}
+
+        </div>
+    </div>
+
+

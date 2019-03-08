@@ -1,0 +1,112 @@
+{{ form_start(form) }}
+
+<div class="row">
+    <div class="col-sm-2">
+        <label>Title</label>
+    </div>
+    <div class="col-sm-10">
+        {{ form_widget(form.title, {'attr': {'class': 'form-control tit'}}) }}
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-2">
+        <label>location</label>
+    </div>
+    <div class="col-sm-5">
+        <input type="text" class="form-control tit">
+    </div>
+    <div class="col-sm-2">
+        <label>price</label>
+    </div>
+     <div class="col-sm-3">
+        {{ form_widget(form.price, {'attr': {'class': 'form-control tit'}}) }}
+    </div>
+</div>
+<label class="cat">Choose Catagory</label>
+<i class="fa fa-angle-down"></i>
+<div class="row">
+    <div class="col-sm-2">
+        <label class="red">Choose Type</label>
+    </div>
+    <div class="col-sm-4">
+        <select class="form-control">
+            <option>Mators</option>
+        </select>
+    </div>
+        <div class="col-sm-2">
+        <label class="red">Model</label>
+    </div>
+    <div class="col-sm-4">
+        <select class="form-control">
+            <option>Tyota</option>
+        </select>
+    </div>
+</div>
+         <div class="row">
+    <div class="col-sm-2">
+        <label class="red">Choose Model</label>
+    </div>
+    <div class="col-sm-4">
+        <select class="form-control">
+            <option>2012</option>
+        </select>
+    </div>
+        <div class="col-sm-2">
+        <label class="red">Distance</label>
+    </div>
+    <div class="col-sm-4">
+        <select class="form-control">
+            <option>2700 km</option>
+        </select>
+    </div>
+</div>
+         <div class="row">
+    <div class="col-sm-2">
+        <label class="red">Feul type</label>
+    </div>
+    <div class="col-sm-4">
+        <select class="form-control">
+            <option>Gasoline</option>
+        </select>
+    </div>
+        <div class="col-sm-2">
+        <label class="red">Transmission</label>
+    </div>
+    <div class="col-sm-4">
+        <select class="form-control">
+            <option>Manual</option>
+        </select>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12">
+        {{ form_widget(form.description, {'attr': {'class': 'form-control', 'placeholder': 'Add description', 'rows': '7'}}) }}
+
+    </div>
+</div>
+<p>Add Photos (Up to 6 Photos)</p>
+                    <div class="first pro">
+              <label>Your Profile picture</label>
+      <label class="custom-file-upload image">
+<input type="file"/>
+upload your photo
+</label>
+              <img src="images/arrow.png">
+    </div>
+<p>More Settings</p>
+       
+            <input type="checkbox" id="fruit1" name="fruit-1" value="A">
+            <label for="fruit1">Allow in App Messanging</label>
+
+            <input type="checkbox" id="fruit2" name="fruit-2" value="b">
+            <label for="fruit2">Allow in Voice & Video cals</label>
+            <input type="checkbox" id="fruit3" name="fruit-3" value="c">
+            <label for="fruit3">Allow users to know my Phone & email</label>
+       
+           <!-- <a href="add-view.html">Post</a> -->
+           <button class="btn">{{ button_label|default('Post') }}</button>
+     
+    </div>
+</div>
+</div>
+{{ form_end(form) }}

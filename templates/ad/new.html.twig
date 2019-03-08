@@ -1,0 +1,255 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Ad{% endblock %}
+
+{% block body %}
+
+<h1>Create new Ad</h1>
+
+
+<a href="{{ path('ad_index') }}">back to list</a>
+
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+{% include 'layout_front/header.html.twig' %}
+
+
+           <div class="modal mmm fade" id="enter-reg" data-toggle="modal" >
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="changing-password">
+                    <div class="second">
+                        <form action="" role="" method="">
+                            <div class="row">
+                                <div class="col-sm-10 col-sm-offset-1">
+                                    <div class="data">
+                                        <div class="parent">
+                <div class="first-child">
+                    <img src="images/new.png">
+                </div>
+                <div class="second-child">
+                    <h3>Register WITH US NOW</h3>
+                    <h4>You are welcome !</h4>
+                </div>
+            </div>
+                                  
+                                    <label>phone</label>
+                                    <input type="email" class="form-control" placeholder="00 123 456 789">
+                                    <label>password</label>
+                                    <input type="password" class="form-control" placeholder="*****">
+                               
+
+                     
+                            <button type="submit">Sign in</button>
+                        </form>
+                        <div class="registering">
+
+                            <a href="#" data-target="#forget" data-toggle="modal" data-dismiss="modal">
+                                Are you forget password?
+                            </a>
+                        </div>
+                        <a href="signup.html" data-dismiss="modal" data-target="#new-reg" data-toggle="modal">
+                            <div class="new-account">
+                                sign up
+                            </div>
+                        </a>
+</div>
+                                </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+ <div class="modal mmm fade" id="forget">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="changing-password forget-pass">
+                    <div class="picture logo-reg">
+                        <img src="images/logo.png">
+                    </div>
+                    <div class="second">
+                        <form action="" role="" method="">
+                            <div class="row">
+
+                                <div class="col-sm-8 col-sm-offset-2">
+                                    <h1>Enter the phone number to receive the confirmation code</h1>
+                                    <label>phone</label>
+                                    <input type="text" class="form-control">
+
+
+                                </div>
+
+                            </div>
+                            <button data-dismiss="modal" data-target="#confirm" data-toggle="modal">send</button>
+
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>            
+    </div> 
+
+    <!-- model of confirm -->
+    <div class="modal mmm fade" id="confirm">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="changing-password forget-pass">
+                    <div class="picture logo-reg">
+                        <img src="images/logo.png">
+                    </div>
+                    <div class="second">
+                        <form action="" role="" method="">
+                            <div class="row">
+                                <div class="col-sm-8 col-sm-offset-2">
+                                    <h1>Enter your new password</h1>
+                                    <label>new password</label>
+                                    <input type="text" class="form-control">
+                                    <label>Confirm new password</label>
+                                    <input type="text" class="form-control">
+
+
+                                </div>
+
+                            </div>
+                            <button type="submit">change</button>
+
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>            
+    </div> 
+
+               
+    <section class="register">
+        <div class="container">
+            <div class="sign">
+            <h1>Add New Ad</h1>
+            <p>
+                We understand the importance of your everyday tasks, that's why we created a tool that allows you to track all your orders and assignments. Our team of assistants and customer service agents will work on live updating you with the status of each of your orders.
+            </p>
+            <div class="row">
+                <div class="col-sm-10 col-sm-offset-1">
+            <div class="enroll-data advertise">
+                <h3>Add your offer now</h3>
+                <h4>It's Free and popular</h4>
+                {{ include('ad/_form.html.twig') }}
+
+            </div>
+                </div>
+           
+       
+      
+    </section>
+
+  <footer>
+    <div class="top-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2">
+                    <div class="first">
+                        <h1 class="bt1">My Account</h1>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#">My Account</a>
+                            </li>
+                                <li>
+                                <a href="#">Lanauge</a>
+                            </li>
+                                <li>
+                                <a href="#">Choose rigioun</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                          <div class="col-sm-2">
+                    <div class="first">
+                        <h1 class="bt1">About us</h1>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#">About us</a>
+                            </li>
+                                <li>
+                                <a href="#">Contact us</a>
+                            </li>
+                        
+                        </ul>
+                    </div>
+                </div>
+                                 <div class="col-sm-3 col-sm-offset-1">
+                    <div class="first">
+                        <h1 class="bt2">Try Our App !</h1>
+                        
+                            <p>
+                                Download our APP now on Andoid
+and IOS
+                            </p>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#">
+                                    <img src="images/play.png">
+                                </a>
+                            </li>
+                                  <li>
+                                <a href="#">
+                                    <img src="images/app.png">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="mobiles">
+                  
+                        <img class="h1" src="images/Samssung S9.png">
+                        <img class="h2" src="images/Space Gray.png">
+                      
+                         
+                          
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <div class="finally">
+                        <h1 class="bt3">Follow us and subscribe our Emails</h1>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <p>We will send to you lastest news</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="text" placeholder="your email" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-footer">
+        <div class="container">
+            <div class="right">
+                <p>
+                    All Rights are resived 
+                </p>
+            </div>
+            <div class="left">
+                <p>
+                    Follow us on 
+                </p>
+              
+                <img src="images/mobile.png">
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+{% endblock %}
+
